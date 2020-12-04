@@ -1,0 +1,137 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #bfc1c8;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrapper{
+    background-image: url(./images/background.jpg);
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: right center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply;
+    background-color: rgb(6 6 6 / 96%);
+}
+.container-wather,
+.search-container {
+    width: 650px;
+}
+.container-wather{
+    background-color: #1e202b;
+    height: 350px;
+}
+.search-container {
+    display: flex;
+    width: 100%;
+}
+.search-container #cityName{
+    flex: 1 0 85%;
+    background-image: linear-gradient(#191313a6, #1e202b);
+    padding: 8px 15px;
+    border: none;
+    border-top-left-radius: 20px;
+    outline: none;
+    border-top: 1px solid gray;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+.search-container .search-bnt {
+    flex: 1 0 15%;
+    border-top-right-radius: 20px;
+    color: white;
+    background-image: linear-gradient(#0089ffa6, #1a2879);
+    outline: none;
+    border: none;
+    border-top: 1px solid gray;
+    text-transform: capitalize;
+}
+.container-wather{
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+border-top: 2px solid gray;
+
+}
+.deactive .container-wather{
+width: 250px;
+height: 250px;
+}
+.deactive .detail > div{
+    display: none;
+}
+.overview{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.detail{
+    display: flex;
+    padding: 15px 10px;
+}
+.detail > div{
+    padding: 0 10px;
+    text-align: center;
+}
+.city{
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+.tempratureCurnt{
+    font-size: 45px;
+    font-weight: 200;
+    color: white;
+}
+.shortDescription{
+    font-size: 25px;
+    padding: 3px 0;
+}
+.detail{
+    text-align: start;
+    margin-left: -10px;
+    margin-top: -15px;
+    font-weight: 300;
+}
+.smallDetail{
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 100;
+    align-self: center;
+}
+.smallDetail span{
+    font-weight: 900;
+    color: #d9e4fd;
+    letter-spacing: .051em;
+
+}
+.detail h3{
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: .041em;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.detail p {
+    font-size: 13px;
+    line-height: 1.7em;
+    text-align: start;
+}
+.detail p span{
+    color: #d9e4fd;
+    font-size: 15px;
+
+}

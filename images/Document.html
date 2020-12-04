@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <title>Document</title>
+<link rel="stylesheet" href="./Document_files/style.css"></head>
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+    <main class="wrapper">
+        <div class="continer deactive ">
+            <section class="search-container">
+                    <input maxlength="20" placeholder="search by city .." id="cityName" type="text">
+                    <button class="search-bnt">search...</button>
+            </section>
+            <section class="container-wather">
+                    <div class="overview">
+                        <div class="mainHeadin">
+                            <h2> 
+                                <span class="city">lahore,</span>
+                                <span class="country">pk</span>
+                            </h2>
+                            <h1>
+                               <span class="tempratureCurnt"> 296</span>
+                               <sup>0</sup>
+                               <span>c</span>
+                            </h1>
+                            <h3 class="shortDescription">Clouds</h3>
+                            <h4 class="detail">scattered clouds</h4>
+                        </div>
+                        <div class="smallDetail">
+                                <p>max temprature : <span class="max-temp">296</span></p>
+                                <p>min temprature : <span class="min-temp">296</span></p>
+                                <p>feels like : <span class="feels-like">293</span>
+                                <sup>0</sup>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="temDetail">
+                            <h3>overview</h3>
+                            <p style="font-size:12px ;">pressure : <span style="font-size:12px ;" class="pressure">1018</span>
+                              <span style="font-size:12px ;text-transform: lowercase;">hpa</span> 
+                            </p>
+                            <p>humidity : <span class="humidity">31</span>&nbsp;%</p>
+                            <p>visibility : <span style="font-size:12px ;" class="visibility">6000</span>Km</p>
+                        </div>
+                        <div class="windDetail">
+                            <h3>wind detail</h3>
+                            <p>Wind Speed : <span class="wind-speed">2.6</span>
+                              <span style="text-transform: lowercase;">&nbsp; m/s</span>  
+                            </p>
+                            <p>wind degree : <span class="wind-degree">280</span>&nbsp;deg</p>
+                        </div>
+                        <div class="cloudsDetail">
+                            <h3>cloud detail</h3>
+                            <p>all coverage cloud : <span class="cloud-all">40</span></p>
+                        </div>
+                        <div class="locationDetail">
+                            <h3>other information</h3>
+                            <p>sunrise : <span class="sunrise">2:50</span></p>
+                            <p>sunset : <span class="sunset">6:50</span></p>
+                            <p>time Zone : <span class="time-zone">+600</span></p>
+
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main> 
+    <script src="./Document_files/main.js.download"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
